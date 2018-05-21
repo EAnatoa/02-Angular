@@ -47,16 +47,64 @@
 
       </app-deber-peliculas>
 
-
-
     </div>
-
-
-
 </div>
 
+  <h3> <br>Ultimas peliculas agregadas</h3>
+
+  <div class="row">
 
 
+    <div class="col-sm-2 "
+         *ngFor="let pelicula of arregloPeliculasAgregadas">
+
+      <app-deber-peliculas
+
+        [urlImagen]="pelicula.urlImagen"
+
+      >
+
+      </app-deber-peliculas>
+
+    </div>
+  </div>
+  <h3> <br>Ultimas peliculas agregadas</h3>
+
+  <div class="row">
+
+
+    <div class="col-sm-2 "
+         *ngFor="let pelicula of arregloSeriesAgregadas">
+
+      <app-deber-peliculas
+
+        [urlImagen]="pelicula.urlImagen"
+
+      >
+
+      </app-deber-peliculas>
+
+    </div>
+  </div>
+
+  <h3> <br>Ultimos capitulos agregados</h3>
+
+  <div class="row">
+
+
+    <div class="col-sm-2 "
+         *ngFor="let pelicula of arregloUltimosAgredados">
+
+      <app-deber-peliculas
+
+        [urlImagen]="pelicula.urlImagen"
+
+      >
+
+      </app-deber-peliculas>
+
+    </div>
+  </div>
 <!-- comienza la clase del viernes
 
 <div class="row">
