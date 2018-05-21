@@ -1,3 +1,68 @@
+<h2 align="right">
+<p> Musica   &#x2502;  Audio Latino   &#x2502; Facebook&#x2502;  Twitter &#x2502; Ingresar</p>
+
+</h2>
+
+<h1>
+  Peliculas ONLINE
+
+  <img src="https://www.cinemascomics.com/wp-content/uploads/2017/11/cine-de-superheroes-2018.jpg"  width="500" height="100">
+</h1>
+
+<div class="row">
+
+
+  <div class="col-sm-6 text-center"
+       *ngFor="let pelicula of arregloPeliculas">
+
+    <app-deber-peliculas
+      [descripcionPelicula]="pelicula.descripcion"
+      [nombrePelicula]="pelicula.nombre"
+      [esEstreno]="pelicula.esEstreno"
+      [urlImagen]="pelicula.urlImagen"
+      (dioClickEnEstado)="alertar()"
+    >
+
+    </app-deber-peliculas>
+
+    <button (click)="pelicula.nombre = 'Erika'"> Cambiar es estreno</button>
+
+
+  </div>
+
+
+  <div class="row">
+
+
+    <div class="col-sm-2 text-center"
+         *ngFor="let pelicula of arregloPeliculasSecundarias">
+
+      <app-deber-peliculas
+        [descripcionPelicula]="pelicula.descripcion"
+        [nombrePelicula]="pelicula.nombre"
+        [esEstreno]="pelicula.esEstreno"
+        [urlImagen]="pelicula.urlImagen"
+        (dioClickEnEstado)="alertar()"
+      >
+
+      </app-deber-peliculas>
+
+
+
+    </div>
+
+
+
+
+    <div class="col-sm-3"></div>
+  <div class="col-sm-3"></div>
+  <div class="col-sm-3"></div>
+  <div class="col-sm-3"></div>
+
+</div>
+
+
+
 <!-- comienza la clase del viernes
 
 <div class="row">
