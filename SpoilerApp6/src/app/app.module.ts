@@ -8,6 +8,8 @@ import { EjercicioComponent } from './ejercicio/ejercicio.component';
 import { GrillaComponent } from './grilla/grilla.component';
 import { DeberPeliculasComponent } from './deber-peliculas/deber-peliculas.component';
 
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,7 +21,8 @@ import { DeberPeliculasComponent } from './deber-peliculas/deber-peliculas.compo
      // Definin todos los pipes -> transforman datos
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    NgbModule.forRoot()
   ], //  Definimos todos los Modulos
   providers: [], // Los Servicios
   bootstrap: [AppComponent] // Componente Principal
