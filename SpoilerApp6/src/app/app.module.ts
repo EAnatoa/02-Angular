@@ -1,6 +1,8 @@
 import {BrowserModule} from '@angular/platform-browser';
 import {NgModule} from '@angular/core';
 
+import {ButtonModule} from 'primeng/button';
+
 import {AppComponent} from './app.component';
 import {FormsModule} from "@angular/forms";
 import { PeliculaBannerComponent } from './peliculas/pelicula-banner/pelicula-banner.component';
@@ -22,7 +24,8 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
   imports: [
     BrowserModule,
     FormsModule,
-    NgbModule.forRoot()
+    NgbModule.forRoot(),
+    ButtonModule
   ], //  Definimos todos los Modulos
   providers: [], // Los Servicios
   bootstrap: [AppComponent] // Componente Principal
