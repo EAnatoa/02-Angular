@@ -1,4 +1,5 @@
-import {Component} from '@angular/core';
+import {Component,OnInit} from '@angular/core';
+
 
 @Component({
   selector: 'app-root', // Selector o etiqueta
@@ -6,10 +7,14 @@ import {Component} from '@angular/core';
   styleUrls: ['./app.component.css'] // Estilos
 })
 
+
 export class AppComponent {
 
+
   arregloPeliculasSecundarias = [
+
     {
+
       nombre: 'Black Panther',
       esEstreno: true,
       urlImagen: 'https://i.blogs.es/c7f5ce/blackpanther/450_1000.jpg'
@@ -29,6 +34,8 @@ export class AppComponent {
       esEstreno: true,
       urlImagen: 'https://www.cronista.com/__export/1511228969706/sites/diarioelcronista/img/2017/11/21/cc211117w023f11.jpg_258117318.jpg'
     },
+
+
   ];
 
 
@@ -49,6 +56,7 @@ export class AppComponent {
 
   arregloPeliculasAgregadas = [
     {
+
       urlImagen: 'https://ennetflix.mx/media/15/1-night_80171694.jpg'
     },
     {
@@ -66,6 +74,13 @@ export class AppComponent {
     {
       urlImagen: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPQzTdTpjaW1sDzA-GSap1jhHK7ZAAtWZiwfHhUts8nXpz7aO9kg'
     },
+    {
+      urlImagen: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPQzTdTpjaW1sDzA-GSap1jhHK7ZAAtWZiwfHhUts8nXpz7aO9kg'
+    },
+    {
+      urlImagen: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPQzTdTpjaW1sDzA-GSap1jhHK7ZAAtWZiwfHhUts8nXpz7aO9kg'
+    },
+
   ];
 
   arregloSeriesAgregadas= [
@@ -83,6 +98,12 @@ export class AppComponent {
     },
     {
       urlImagen: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3ijz0Ebrn4MP17vnwWofIZ9xWI4YHBMnvbRvzxMgdLbYCd5pfmg'
+    },
+    {
+      urlImagen: 'https://www.diariofemenino.com/uploads/actualidad/pablonarcos.jpg'
+    },
+    {
+      urlImagen: 'https://www.diariofemenino.com/uploads/actualidad/pablonarcos.jpg'
     },
     {
       urlImagen: 'https://www.diariofemenino.com/uploads/actualidad/pablonarcos.jpg'
@@ -108,6 +129,12 @@ export class AppComponent {
     {
       urlImagen: 'https://4.bp.blogspot.com/-L2EQyNHeeiA/WJQdePgrvQI/AAAAAAAABwI/YvVys9JsyGkQl1W6TLygGVCnthwm_iRygCLcB/s1600/Alias-JJ.jpg'
     },
+    {
+      urlImagen: 'https://image.tmdb.org/t/p/w200_and_h300_bestv2/mo0FP1GxOFZT4UDde7RFDz5APXF.jpg'
+    },
+    {
+      urlImagen: 'https://image.tmdb.org/t/p/w200_and_h300_bestv2/mo0FP1GxOFZT4UDde7RFDz5APXF.jpg'
+    },
   ];
 
 
@@ -115,7 +142,6 @@ export class AppComponent {
     console.log('Evento: ', evento); // true
     alert('DIO CLICK EN ES ESTRENO!!!!!!!!!');
   }
-
 
 
 

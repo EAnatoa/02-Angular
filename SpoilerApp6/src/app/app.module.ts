@@ -11,6 +11,7 @@ import { PeliculaBannerComponent } from './peliculas/pelicula-banner/pelicula-ba
 import { EjercicioComponent } from './ejercicio/ejercicio.component';
 import { GrillaComponent } from './grilla/grilla.component';
 import { DeberPeliculasComponent } from './deber-peliculas/deber-peliculas.component';
+import {CarouselModule} from 'primeng/carousel';
 
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
@@ -29,7 +30,8 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
     NgbModule.forRoot(),
     ButtonModule,
     BrowserAnimationsModule,
-    MatButtonModule
+    MatButtonModule,
+    CarouselModule
   ], //  Definimos todos los Modulos
   providers: [], // Los Servicios
   bootstrap: [AppComponent] // Componente Principal

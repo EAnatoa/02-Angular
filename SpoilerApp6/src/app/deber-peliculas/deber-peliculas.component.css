@@ -1,3 +1,4 @@
+
 .sa-fondo-deber-peliculas{
   background-color: #000000;
   border-style: solid;
@@ -33,3 +34,19 @@
 .sa-espaciado {
   height: 250px;
 }
+
+.col-sm-1{
+  width: 48%;
+  display: inline-block;
+}
+
+.col-sm-6{
+  width: 48%;
+  display: inline-block;
+}
+
+.col-sm-3{
+  width: 48%;
+  display: inline-block;
+}
+
