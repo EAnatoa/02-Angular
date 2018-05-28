@@ -182,7 +182,6 @@ export class AppComponent {
 
 
 
-
   // nombre = 'Adrian';
   // apellido = 'Eguez';
   // edad = 28;
