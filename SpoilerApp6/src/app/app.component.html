@@ -65,7 +65,7 @@
 <div class="row">
 
 
-  <div class="col-sm-6 text-center"  width="960" height="640"
+  <div class="col-sm-6 text-center"
        *ngFor="let pelicula of arregloPeliculas">
 
 
@@ -87,7 +87,7 @@
 
   <div class="row">
 
-    <div class="col-sm-3 " width="960" height="640"
+    <div class="col-sm-3 "
          *ngFor="let pelicula of arregloPeliculasSecundarias">
 
 
@@ -113,7 +113,7 @@
   <div class="row">
 
 
-    <div class="col-sm-1" width="960" height="640">
+    <div class="col-sm-1" >
 
 
       <p-carousel headerText="Ultimas peliculas agregadas" [value]="arregloPeliculasAgregadas"  [style]="{'margin-top':'20px','margin-bottom':'20px'}">
@@ -139,7 +139,7 @@
   <div class="row">
 
 
-    <div class="col-sm-1 " width="960" height="640">
+    <div class="col-sm-1 " >
       <p-carousel headerText="Ultimas series agregadas" [value]="arregloSeriesAgregadas" [style]="{'margin-top':'20px','margin-bottom':'20px'}">
         <ng-template let-pelicula pTemplate="item">
       <app-deber-peliculas
@@ -159,7 +159,7 @@
   <div class="row">
 
 
-    <div class="col-sm-1 "  width="960" height="640">
+    <div class="col-sm-1 "  >
 
       <p-carousel headerText="Ultimas capitulos agregadas" [value]="arregloUltimosAgredados"  [style]="{'margin-top':'20px','margin-bottom':'20px'}">
         <ng-template let-pelicula pTemplate="item">

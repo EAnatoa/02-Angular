@@ -13,6 +13,8 @@ import { GrillaComponent } from './grilla/grilla.component';
 import { DeberPeliculasComponent } from './deber-peliculas/deber-peliculas.component';
 import {CarouselModule} from 'primeng/carousel';
 
+
+
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
