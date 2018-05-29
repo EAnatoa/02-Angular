@@ -40,6 +40,5 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 })
 // @ALGO() // Decorator
 
-
 export class AppModule {
 }

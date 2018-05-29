@@ -5,6 +5,7 @@ import {Component,OnInit} from '@angular/core';
   selector: 'app-root', // Selector o etiqueta
   templateUrl: './app.component.html', // Estructura
   styleUrls: ['./app.component.css'] // Estilos
+
 })
 
 
@@ -142,6 +143,20 @@ export class AppComponent {
     console.log('Evento: ', evento); // true
     alert('DIO CLICK EN ES ESTRENO!!!!!!!!!');
   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

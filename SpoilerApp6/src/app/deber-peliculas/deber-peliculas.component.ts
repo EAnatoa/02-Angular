@@ -1,6 +1,7 @@
 import {Component, EventEmitter, Input, OnChanges, OnInit, Output} from '@angular/core';
 
 
+
 @Component({
   selector: 'app-deber-peliculas',
   templateUrl: './deber-peliculas.component.html',

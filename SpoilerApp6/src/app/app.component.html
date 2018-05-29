@@ -48,11 +48,21 @@
 
  FIN CLASE COMPONENTES -->
 
+<!--
+<div class="row">
+  <div class="col">
+    <div ngbDropdown class="d-inline-block">
+      <button class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle >Login</button>
+      <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+        <button class="dropdown-item">Iniciar Sesion</button>
+        <button class="dropdown-item">Cerrar Sesion</button>
 
-
-
+      </div>
+    </div>
+  </div>
+-->
 <h2 align="right">
-<p> Musica   &#x2502;  Audio Latino   &#x2502; Facebook&#x2502;  Twitter &#x2502; Ingresar</p>
+  <p> Musica   &#x2502;  Audio Latino   &#x2502; Facebook&#x2502;  Twitter &#x2502; Ingresar</p>
 
 </h2>
 
@@ -111,7 +121,7 @@
 
     </div>
 
-</div>
+  </div>
 
 
 
@@ -128,13 +138,13 @@
         <ng-template let-pelicula pTemplate="item">
 
 
-      <app-deber-peliculas
+          <app-deber-peliculas
 
-        [urlImagen]="pelicula.urlImagen"
+            [urlImagen]="pelicula.urlImagen"
 
-      >
+          >
 
-      </app-deber-peliculas>
+          </app-deber-peliculas>
 
         </ng-template>
       </p-carousel>
@@ -151,13 +161,13 @@
     <div class="col-sm-1 " >
       <p-carousel headerText="Ultimas series agregadas" [value]="arregloSeriesAgregadas" >
         <ng-template let-pelicula pTemplate="item">
-      <app-deber-peliculas
+          <app-deber-peliculas
 
-        [urlImagen]="pelicula.urlImagen"
+            [urlImagen]="pelicula.urlImagen"
 
-      >
+          >
 
-      </app-deber-peliculas>
+          </app-deber-peliculas>
         </ng-template>
       </p-carousel>
     </div>
@@ -172,13 +182,13 @@
 
       <p-carousel headerText="Ultimas capitulos agregadas" [value]="arregloUltimosAgredados"  >
         <ng-template let-pelicula pTemplate="item">
-      <app-deber-peliculas
+          <app-deber-peliculas
 
-        [urlImagen]="pelicula.urlImagen"
+            [urlImagen]="pelicula.urlImagen"
 
-      >
+          >
 
-      </app-deber-peliculas>
+          </app-deber-peliculas>
         </ng-template>
       </p-carousel>
 
@@ -186,55 +196,56 @@
   </div>
 
 
-<!--  clase martes 22
 
-<div class="row">
+  <!--  clase martes 22
 
-  <div class="col-sm-6 text-center"
-       *ngFor="let pelicula of arregloPeliculas">
+  <div class="row">
 
-    <app-pelicula-banner
-      [descripcionPelicula]="pelicula.descripcion"
-      [nombrePelicula]="pelicula.nombre"
-      [esEstreno]="pelicula.esEstreno"
-      [urlImagen]="pelicula.urlImagen"
-      (dioClickEnEstado)="alertar()"
-    >
+    <div class="col-sm-6 text-center"
+         *ngFor="let pelicula of arregloPeliculas">
 
-    </app-pelicula-banner>
+      <app-pelicula-banner
+        [descripcionPelicula]="pelicula.descripcion"
+        [nombrePelicula]="pelicula.nombre"
+        [esEstreno]="pelicula.esEstreno"
+        [urlImagen]="pelicula.urlImagen"
+        (dioClickEnEstado)="alertar()"
+      >
 
-    <button (click)="pelicula.nombre = 'Erika'"> Cambiar es estreno</button>
+      </app-pelicula-banner>
 
+      <button (click)="pelicula.nombre = 'Erika'"> Cambiar es estreno</button>
+
+
+    </div>
+
+
+    <div class="col-sm-2 text-center"
+         *ngFor="let numero of arregloNumeros; let indice = index">
+
+      {{indice}}: Numero {{numero}}
+
+    </div>
+
+
+    <div class="col-sm-6">
+      <h1 *ngIf="mostrarHola"> Hola </h1>
+
+    </div>
+    <div class="col-sm-6">
+      <h1 *ngIf="!mostrarHola"> Mundo </h1>
+    </div>
+
+    <div class="col-sm-3"></div>
+    <div class="col-sm-3"></div>
+    <div class="col-sm-3"></div>
+    <div class="col-sm-3"></div>
 
   </div>
 
 
-  <div class="col-sm-2 text-center"
-       *ngFor="let numero of arregloNumeros; let indice = index">
 
-    {{indice}}: Numero {{numero}}
-
-  </div>
-
-
-  <div class="col-sm-6">
-    <h1 *ngIf="mostrarHola"> Hola </h1>
-
-  </div>
-  <div class="col-sm-6">
-    <h1 *ngIf="!mostrarHola"> Mundo </h1>
-  </div>
-
-  <div class="col-sm-3"></div>
-  <div class="col-sm-3"></div>
-  <div class="col-sm-3"></div>
-  <div class="col-sm-3"></div>
-
-</div>
-
-
-
--->
+  -->
 
 
 
