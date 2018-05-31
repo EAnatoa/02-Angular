@@ -48,9 +48,9 @@
 
  FIN CLASE COMPONENTES -->
 
-<!--
+
 <div class="row">
-  <div class="col">
+  <div class="col" align="right">
     <div ngbDropdown class="d-inline-block">
       <button class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle >Login</button>
       <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
@@ -60,7 +60,20 @@
       </div>
     </div>
   </div>
--->
+
+  <p-table [value]="gas">
+    <ng-template pTemplate="header">
+      <tr>
+        <th>Tipo de emanacion</th>
+        <th>Rangos</th>
+        <th>Fecha y Hora</th>
+        <th>Sensor</th>
+        <th>Habitacion</th>
+      </tr>
+    </ng-template>
+
+  </p-table>
+<!--
 <h2 align="right">
   <p> Musica   &#x2502;  Audio Latino   &#x2502; Facebook&#x2502;  Twitter &#x2502; Ingresar</p>
 
@@ -195,7 +208,7 @@
     </div>
   </div>
 
-
+-->
 
   <!--  clase martes 22
 
