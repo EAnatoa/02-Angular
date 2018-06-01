@@ -17,6 +17,7 @@ import {TableModule} from 'primeng/table';
 
 
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import { ExamenComponent } from './examen/examen.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
     PeliculaBannerComponent,
     EjercicioComponent,
     GrillaComponent,
-    DeberPeliculasComponent
+    DeberPeliculasComponent,
+    ExamenComponent
   ], // Definir todos los componentes a usarse
      // Definin todos los pipes -> transforman datos
   imports: [
